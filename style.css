@@ -625,10 +625,123 @@ footer{
     border-top:1px solid rgba(255,255,255,.08);
 
 }
-.project-image i{
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 
-    font-size:90px;
+@media (max-width: 992px){
 
-    color:#38BDF8;
+    nav{
+        padding:20px 40px;
+    }
+
+    .hero-content,
+    .about{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-text,
+    .about-content{
+        width:100%;
+    }
+
+    .description{
+        margin:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:300px;
+    }
+
+    .about-image img{
+        width:280px;
+        height:280px;
+    }
+
+}
+@media (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    nav ul li{
+
+        margin:0;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .section-header h2{
+
+        font-size:34px;
+
+    }
+
+}
+@media (max-width:480px){
+
+    .hero{
+
+        padding:100px 25px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-image img{
+
+        width:240px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
 
 }

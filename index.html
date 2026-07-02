@@ -14,6 +14,8 @@
     <link
     href="https://fonts.gooleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 
@@ -41,7 +43,7 @@
 
     <div class="hero-content">
 
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-right">
 
             <p class="intro">👋 Hello, I'm</p>
 
@@ -89,7 +91,7 @@
 
         </div>
 
-        <div class="hero-image">
+        <div class="hero-image" data-aos="fade-left">
 
             <img src="images/profile.jpg" alt="Leon Maina">
 
@@ -100,11 +102,11 @@
 </section>
 <section id="about" class="about">
 
-    <div class="about-image">
+    <div class="about-image" data-aos="fade-right">
         <img src="images/profile.jpg" alt="Leon Maina">
     </div>
 
-    <div class="about-content">
+    <div class="about-content" data-aos="fade-left">
 
         <h5>ABOUT ME</h5>
 
@@ -201,7 +203,7 @@
         <p>I'm constantly learning and improving my technical skills.</p>
     </div>
 
-    <div class="skills-grid">
+   <div class="skills-grid" data-aos="zoom-in">
 
         <div class="skill-card">
     <i class="fa-brands fa-html5"></i>
@@ -268,7 +270,7 @@
         <p>I provide technology and creative solutions that help individuals and businesses grow.</p>
     </div>
 
-    <div class="services-grid">
+    <div class="services-grid" data-aos="fade-up">
 
         <div class="service-card">
             <h3><i class="fa-solid fa-globe"></i>i> Web Development</h3>
@@ -301,7 +303,7 @@
         <p>Some of the projects I've built and those I'm currently working on.</p>
     </div>
 
-    <div class="projects-grid">
+    <div class="projects-grid" data-aos="fade-up">
 
         <div class="project-card">
 
@@ -353,7 +355,7 @@
         </p>
     </div>
 
-    <div class="contact-container">
+    <div class="contact-container" data-aos="zoom-in">
 
         <div class="contact-item">
             <h3><i class="fa-solid fa-envelope"></i> Email</h3>
@@ -390,5 +392,16 @@
 
 </footer>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
