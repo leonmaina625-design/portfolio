@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-    <script src="script.js"></script>
 
 <body>
 
@@ -16,26 +15,68 @@
     <h2>Leon Maina</h2>
 
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#skills">Skills</a></li>
+
+    <li><a href="#services">Services</a></li>
+
+    <li><a href="#projects">Projects</a></li>
+
+    <li><a href="#contact">Contact</a></li>
+
+</ul>
 </nav>
 
-<header class="hero">
+<section class="hero" id="home">
 
-    <h1>Hi, I'm <span>Leon Maina</span> 👋</h1>
+    <div class="hero-content">
 
-    <p>
-        Information Technology Student • Java Developer • Web Developer
-    </p>
+        <div class="hero-text">
 
-    <a href="#" class="btn">
-        View My Projects
-    </a>
+            <p class="intro">👋 Hello, I'm</p>
 
-</header>
+            <h1>
+                Leon <span>Maina</span>
+            </h1>
 
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p class="description">
+
+                Passionate Information Technology student at Multimedia University of Kenya.
+                I build modern websites, Java applications and creative digital solutions through software development and Lee Creatives.
+
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="#" class="btn secondary">
+                    Download CV
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/profile.jpg" alt="Leon Maina">
+
+        </div>
+
+    </div>
+
+</section>
+<script src="script.js"></script>
 </body>
 </html>
