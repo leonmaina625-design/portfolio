@@ -20,76 +20,94 @@
 
 
 <body>
+    <div id="progress-bar"></div>
 
 <nav>
-   <h2>&lt;Leon<span>Maina</span>/&gt;</h2>
-    <ul>
-    <li><a href="#home">Home</a></li>
 
-    <li><a href="#about">About</a></li>
+    <h2>&lt;LeonMaina/&gt;</h2>
 
-    <li><a href="#skills">Skills</a></li>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 
-    <li><a href="#services">Services</a></li>
+    <ul class="nav-menu">
 
-    <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#home">Home</a></li>
 
-    <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
 
-</ul>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+
+        <li><a class="nav-link" href="#services">Services</a></li>
+
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+
+    </ul>
+
 </nav>
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <div class="hero-text" data-aos="fade-right">
+       <div class="hero-text" data-aos="fade-right">
 
-            <p class="intro">👋 Hello, I'm</p>
+    <p class="intro">👋 Hello, I'm</p>
 
-            <h1>
-                Leon <span>Maina</span>
-            </h1>
+    <h1>Leon <span>Maina</span></h1>
 
-            <h2>
-                <span id="typing"></span>
-            </h2>
+    <h2><span id="typing"></span></h2>
 
-            <p class="description">
+    <p class="description">
+        Passionate Software Developer and Information Technology student
+        at Multimedia University of Kenya. I enjoy building responsive
+        websites, Java applications, and creative digital solutions that
+        solve real-world problems.
+    </p>
 
-                Passionate Information Technology student at Multimedia University of Kenya.
-                I build modern websites, Java applications and creative digital solutions through software development and Lee Creatives.
+    <div class="hero-details">
 
-            </p>
+        <p><i class="fa-solid fa-location-dot"></i> Kenya</p>
 
-            <div class="buttons">
+        <p><i class="fa-solid fa-envelope"></i> leonmaina625@gmail.com</p>
 
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
+        <p><i class="fa-solid fa-user-check"></i> Open to Attachment Opportunities</p>
 
-                <a href="#" class="btn secondary">
-                    Download CV
-                </a>
+    </div>
 
-            </div>
-            <div class="social-icons">
+    <div class="buttons">
 
-    <a href="https://github.com/leonmaina625-design" target="_blank">
-        <i class="fab fa-github"></i>
-    </a>
+        <a href="Leon_Maina_CV.pdf" download class="btn">
+            <i class="fa-solid fa-download"></i>
+            Download CV
+        </a>
 
-    <a href="mailto:leonmaina625@gmail.com">
-        <i class="fas fa-envelope"></i>
-    </a>
+        <a href="#projects" class="btn secondary">
+            <i class="fa-solid fa-code"></i>
+            View Projects
+        </a>
 
-    <a href="https://wa.me/254762976846" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    </div>
+
+    <div class="social-icons">
+
+        <a href="https://github.com/leonmaina625-design" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://wa.me/254762976846" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
 
 </div>
-
-        </div>
 
         <div class="hero-image" data-aos="fade-left">
 
@@ -402,6 +420,9 @@ AOS.init({
 </script>
 
 <script src="script.js"></script>
+<button id="topBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 </body>
 </html>
