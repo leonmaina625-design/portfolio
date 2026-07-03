@@ -40,6 +40,7 @@ function type() {
 }
 
 type();
+
 window.addEventListener("scroll", () => {
 
     const scrollTop = document.documentElement.scrollTop;
@@ -131,4 +132,8 @@ document.querySelectorAll(".nav-link").forEach(link => {
 
     });
 
+});
+AOS.init({
+    duration: 1000,
+    once: true
 });
