@@ -137,3 +137,26 @@ AOS.init({
     duration: 1000,
     once: true
 });
+const progressBars = document.querySelectorAll(".progress");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.style.width =
+            entry.target.classList.contains("html") ? "95%" :
+            entry.target.classList.contains("css") ? "90%" :
+            entry.target.classList.contains("js") ? "85%" :
+            entry.target.classList.contains("java") ? "80%" :
+            entry.target.classList.contains("python") ? "75%" :
+            "70%";
+
+        }
+
+    });
+
+},{threshold:0.5});
+
+progressBars.forEach(bar => observer.observe(bar));
