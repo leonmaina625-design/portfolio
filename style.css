@@ -1354,3 +1354,226 @@ body::after{
     color:#CBD5E1;
     line-height:1.7;
 }
+/* THEME TOGGLE */
+
+.theme-toggle{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    border:2px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
+    color:#38BDF8;
+
+    font-size:18px;
+
+}
+
+.theme-toggle:hover{
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    transform:rotate(180deg);
+
+}
+/* LIGHT MODE */
+
+body.light-mode{
+
+    background:#F8FAFC;
+
+    color:#0F172A;
+
+}
+
+body.light-mode nav{
+
+    background:rgba(255,255,255,.85);
+
+}
+
+body.light-mode .skill-card,
+body.light-mode .service-card,
+body.light-mode .project-card,
+body.light-mode .timeline-content,
+body.light-mode .contact-item{
+
+    background:white;
+
+    color:#0F172A;
+
+}
+
+body.light-mode p{
+
+    color:#475569;
+
+}
+
+body.light-mode .description{
+
+    color:#475569;
+
+}
+/* =========================
+   LOADING SCREEN
+========================= */
+
+#loader{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#0F172A;
+
+    z-index:9999;
+
+    transition:opacity .8s ease, visibility .8s ease;
+}
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-logo{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    border:5px solid #38BDF8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#38BDF8;
+
+    margin:auto;
+
+    animation:spin 2s linear infinite;
+
+}
+
+.loader-content h2{
+
+    margin-top:25px;
+
+    font-size:22px;
+
+}
+
+.loader-bar{
+
+    width:260px;
+
+    height:10px;
+
+    background:#1E293B;
+
+    margin-top:25px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.loader-progress{
+
+    width:0;
+
+    height:100%;
+
+    background:#38BDF8;
+
+    animation:loading 2.5s forwards;
+
+}
+
+@keyframes loading{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+#particles{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:-1;
+
+}
